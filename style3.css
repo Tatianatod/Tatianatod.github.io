@@ -241,22 +241,19 @@ ul.nav_icons-panel li i {
     position: relative;
     justify-content: space-between;
     align-items: flex-start;
-    
     padding: 40px 20px 20px 20px;
     gap: 10px;
-    background-color: white;
+    background-color: #f3f9fb;
     border-radius: 10px;
     box-sizing: border-box;
     flex-wrap: nowrap;
-
-
 }
 
 .stage {
     flex: 1;;
     text-align: center;
     color: black;
-    background-color:  #F15A22;
+    background-color:  white;
     border-radius: 10px;
     min-width: 50px;
     max-width: 100%;
@@ -265,21 +262,23 @@ ul.nav_icons-panel li i {
     overflow-wrap: break-word;
     white-space: normal;
     z-index: 1;
+    font-weight: bold;
 }
 
 .points {
     display: block;
     font-size: 0.9em;
     color: black;
+    font-weiht: lighter;
 }
 
 #you_are_here {
     display: inline-block;
     top: 100%;
     left: 50%;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
-    color: white; 
+    color: #F15A22; 
 }
 
 #progress_bar {
@@ -342,7 +341,7 @@ ul.nav_icons-panel li i {
     background: #F6F0D8;
 }
 .awards4_block {
-    background: #F6F0D8;
+    background: rgb(194, 230, 240);
 
 }
 

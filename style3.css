@@ -443,3 +443,14 @@ ul.nav_icons-panel li i {
         grid-template-rows: auto;
     }
 }
+#push {
+    width: 100px;
+    background-color: #F15A22;
+    border-radius: 8px;
+    border: 3px solid #F15A22;
+   }
+
+#task {
+    width: fit-content;
+    width: 300px;
+}

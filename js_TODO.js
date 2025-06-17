@@ -4,7 +4,7 @@ let extraTasks = [
     { id: 2, text: "HomeWork 2 Task 4,5", completed: false },
     { id: 3, text: "IBM SkillsBuild_JS_Course", completed: false }
 ];
-    // extra = localStorage.setItem("extraTasks", JSON.stringify(extraTasks)); // для сохрвне
+    extra = localStorage.setItem("extraTasks", JSON.stringify(extraTasks)); // для сохрвне
 let storedTasks = JSON.parse(localStorage.getItem("extraTasks"));
 if (storedTasks === null) {
     extraTasks = [];

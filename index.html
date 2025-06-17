@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal account</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body onload="showProgress(200)">
+    <div class="board">
+        <div class="board_nav">
+            <nav class="nav">
+                <div class="nav_logo">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="nav_icons">
+                <ul class="nav_icons-panel">
+                    <li><i class="fa-solid fa-house"></i> Home</li>
+                    <li><i class="fa-solid fa-book-open"></i> My learning</li>
+                    <li><i class="fa-solid fa-headset"></i> Classroom</li>
+                    <li><i class="fa-solid fa-book"></i> Materials</li>
+                    <li><i class="fa-solid fa-minimize"></i> Collapse menu</li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="board_body">
+            <header class="board_header">
+                <h1 class="board_header-title">My learning</h1>
+                <div class="board_header-icons">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #f15a22;"></i>
+                    <i class="fa-solid fa-question" style="color: #f15a22;"></i>
+                    <i class="fa-solid fa-circle-user" style="color: #f15a22;"></i></div>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="box">
+                    <h2 class="title-2">Overview</h2>
+					
+					<div class="learning_process-header-value1">My learning process</div>
+                        <div class="learning_process">
+                        <div class ="progress_track">
+                            <div class="stage" style="left: 0%;">HTML&CSS: Ninja<br><span class="points">100 points</span></div>
+                            <div class="stage" style="left: 50%;">JavaScript: Hero<br><span class="points">200 points</span>
+                                <span id="you_are_here">You're here</span>
+                            </div>
+                            <div class="stage" style="left: 75%;">Full Stack Bootcamp: Superhero<br><span class="points">300 points</span></div>
+                            <div class="stage" style="left: 100%;">Full Stack Circle: Grand Master<br><span class="points">400 points</span></div>
+                            <div id="progress_bar"></div>
+                            
+                        </div>
+				</div>    
+                </div>
+
+                <div class="box hello-box">
+                    <img src="./img/ReDI_Illus_Mobile_Footer.png" alt="hello">
+                </div>
+                
+                    <div class="box todo_list">
+                        <h2 class="title-2">My ToDos</h2>
+                        <div class="list">
+                            <input id="task" type="text"/>
+                            <button onclick="addTask()">Add New Task</button>
+                            <button onclick="reverse()">Reverse order</button>
+                        </div>
+                    <hr>
+                    <div id="todoList">
+                        <div id="extraToDoList"></div>
+                        <div id="courseToDoList"></div>
+                        </div>
+                    </div>
+                
+                    <div class="box achievements">
+                        <h2 class="title-3">My achievements</h2>
+                        <div class="awards">
+                            <div class="awards1_block">
+                                <div class="awards_header">
+                                    <div class="awards_name">Ninja</div>
+									<div class="awards_value">100 points</div>
+                                </div>
+                                <div class="awards_icon">
+								<img src="./img/Screenshot 2025-06-12 185519.png" alt="Ninja">
+							</div>
+							</div>
+                        
+							<div class="awards2_block">
+								<div class="awards_header2">
+									<div class="awards_name2">Hero</div>
+									<div class="awards_value2">200 points</div>
+								</div>
+								<div class="awards_icon">
+									<img src="./img/hero.png" alt="Hero">
+								</div>
+							</div>
+
+                            <div class="awards3_block">
+								<div class="awards_header3">
+									<div class="awards_name3">Superhero</div>
+									<div class="awards_value3">300 points</div>
+								</div>
+								<div class="awards_icon">
+									<img src="./img/Screenshot 2025-06-12 185534.png" alt="Superhero">
+								</div>
+							</div>
+
+                            <div class="awards4_block">
+								<div class="awards_header4">
+									<div class="awards_name4">Grand Master</div>
+									<div class="awards_value4">400 points</div>
+								</div>
+								<div class="awards_icon">
+									<img src="./img/Screenshot 2025-06-12 185534.png" alt="Superhero">
+								</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+<script src="code3.js"> </script>
+<script src="js_TODO2.js"> </script>
+</body>
+</html>
